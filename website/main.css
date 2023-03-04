@@ -42,7 +42,6 @@ h3, p {
 
 footer {
   margin-top: 200px;
-  margin-bottom: auto 0;
 }
 /* Styles text on the about page */
 
@@ -140,7 +139,44 @@ input[type=text], select, textarea {
     padding: 40px;
   }
 
+  /* Animates BOOK NOW on contact page */
 
+  .animation {
+    animation-name: textgrow;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+  }
+
+  @keyframes textgrow {
+    0% { 
+      transform: scale(1); 
+    }
+    50% 
+    {transform: scale(1.5); 
+    }
+    100% {
+      transform: scale(1); 
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Sets up media query for computer screens */
 @media (min-width:1281px) {
     li {
         display: inline;
